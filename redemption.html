@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.callofduty.com/redemption by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2023 06:58:15 GMT -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="template" content="cod-mobile-standard"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=100">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta property="og:title" content="Call of Duty Mobile | Home" />
+	<meta name="twitter:title" content="Call of Duty Mobile | Home" />
+	<meta name="twitter:card" content="summary">
+	<meta name="apple-mobile-web-app-title" content="Call of Duty Mobile | Home"/>  
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="cdn/codm/zpHm2flUeC/images/favicon.ico" />
+	<title>REDEMPTION CENTER - Call of Duty Mobile | Home</title>
+	<link rel="stylesheet" href="cdn/codm/zpHm2flUeC_7/css/style41c3.css?v=53" />
+	<script>
+		for(var i=1;i<10;i++) {
+			var img = new Image();
+			img.src = "https://www.callofduty.com/cdn/codm/zpHm2flUeC/images/slogan"+i+".png";
+		}
+		var img2= new Image();
+		img2.src="cdn/codm/zpHm2flUeC/images/pop_bg1.png";
+		var img3= new Image();
+		img3.src="cdn/codm/zpHm2flUeC/images/uid_pic.png";
+		var img4= new Image();
+		img4.src="cdn/codm/zpHm2flUeC/images/pop_bg2.png";
+	</script>
+</head>
+<body>
+<div class="wrap">
+	<div class="lang_box sp">
+		<div class="lang_drop">
+			<p class="lang_on"><em>English</em></p>
+		</div>
+		<ul class="lang_list" id="lang_list">
+			
+		</ul>
+	</div>
+	<div class="container">
+	    <div class="head pr">
+	        <h1 class="hide">REDEMPTION CENTER</h1>
+	      
+			<div class="logo"></div>
+			<div class="slogan slogan1" id="logoStyle"></div>
+        	<div class="code_ct">
+        		<ul class="code_list c">
+					<li class="mobile_label"><span>UID</span></li>
+					<li>
+						<span class="desktop_label">UID</span>
+						<input id="F_UID" tabindex="1" type="number" placeholder="UID" onkeyup="value=value.replace(/\D/g,'');checkState();" class="input_text" />
+						<a href="javascript:popup($('#pop1'));" class="icon_mark sp">?</a>
+					</li>
+					<li class="mobile_label"><span id="label_titlie" class="label-titlie redeem_text">Redeem Code</span></li>
+					<li>
+						<span id="label_titlie" class="desktop_label label-titlie redeem_text">Redeem Code</span>
+						<input id="F_CDKEY" tabindex="2" type="text" placeholder="Redeem Code"  onkeyup="checkState();"  class="input_text" />
+					</li>
+					<li class="mobile_label"><span id="label_vercode" class="label_vercode">Verification</span></li>
+					<li class="verification_row">
+						<span id="label_vercode" class="desktop_label label_vercode">Verification</span>
+						<input id="F_VCODE" tabindex="3" type="text" placeholder="Verification Code"  onkeyup="checkState();" class="input_code" />
+						<a href="javascript:;" class="code_text">
+							<img id="val_code" src="cdn/codm/zpHm2flUeC/images/code_img.png" width="138" height="52" alt="code" />
+						</a>
+						<a href="javascript:;" class="icon_break sp" id="refvc">break</a>
+					</li>
+				</ul>
+				<a href="javascript:void(0)" tabindex="4" class="btn_confirm sp btn_confirm_gray" id="label_submit">Submit</a>       <!--灰质加类名   btn_confirm_gray   -->
+				<div class="txt_bg">
+					<p id="deptxt" class="test"><span class="yellow">Update Required to Redeem</span></p>
+					<p id="cjs">Check the App Store and update if prompted to avoid losing your code once entered</p>
+				</div>
+        	</div>
+	    </div>
+    </div>
+</div>
+<div class="footer">
+	<div class="foot_ct">
+		<div class="foot_copy">
+			<div class="copy_right">
+				<p class="copy_2020" id="LineTencent">&copy; 2022 Activision Publishing, Inc. ACTIVISION and CALL OF DUTY are trademarks of Activision Publishing, Inc. All other trademarks and trade names are property of their respective owners.</p>
+				<p class="footer_bottom"><a id="PrivacyPolicy" href="https://www.activision.com/legal/privacy-policy" href2="https://game.qq.com/privacy_guide_en.shtml" target="_blank">Privacy Policy</a><em>|</em><a id="CookiePolicy" href="https://www.activision.com/legal/cookie-policy" target="_blank">Cookie Policy</a><em>|</em><a id="TermsOfUse" href="https://www.activision.com/legal/terms-of-use" target="_blank">Terms of Use</a><em style="display:none" id="DNSI_l">|</em><a style="display:none" id="DNSI" href="https://support.activision.com/privacyrequest?st=ca" target="_blank">Do Not Sell My Information</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pop pop_bg1" id="pop1" style="display: none;">
+	<div class="pop_inner">
+		<p class="uid_msg" id="pop1_1">Enter your redemption code and Call of Duty Mobile UID to collect your reward in the game!</p>
+		<p class="uid_ct" id="pop1_2">How to find your UID:</p>
+		<div class="uid_img_cont"><img src="cdn/codm/zpHm2flUeC/images/uid_pic.png" width="633" height="460" alt="uid" /></div>
+		<a href="javascript:;" class="pop_close sp">&times;</a>
+	</div>
+</div>
+<div class="pop pop_bg2" id="pop2" style="display: none;">
+	<div class="pop_inner pop_inner2">
+		<p class="verification_msg msg" ></p>
+		<a href="javascript:;" class="ok_btn sp" id="btn_ok">ok</a>
+		<a href="javascript:;" class="pop_close sp">&times;</a>
+	</div>
+</div>
+
+<div class="pop pop_bg2" id="pop3" style="display: none;">
+	<div class="pop_inner pop_inner3">
+		<p class="verification_msg1 msg" ></p>
+		<a href="javascript:;" class="pop_close sp">&times;</a>
+	</div>
+</div>
+<div class="pop pop_bg2" id="pop4" style="display: none;">
+	<div class="pop_inner pop_inner4">
+		<div class="pop_rzct">
+			<p class="rz_msg1" id="pop4_1">Please confirm that you would like to redeem this code for the account listed below.</p>
+			<ul class="rz_list c">
+				<li><span id="pop4_nc">nickname：</span><p id="V_NICK"></p></li>
+				<li><span>UID:</span><p id="V_UID"></p></li>
+			</ul>
+			<div class="rz_btn">
+				<a href="javascript:;" id="Confirm" class="Confirm_btn sp">Confirm</a>
+				<a href="javascript:;" id="Cancel" class="Cancel_btn sp">Cancel</a>
+			</div>
+		</div>
+		<a href="javascript:;" class="pop_close sp">&times;</a>
+	</div>
+
+</div>
+
+<script src="cdn/codm/zpHm2flUeC/js/jquery.min.js"></script>
+<script type="text/javascript" src="mobile_build/milo.js"></script>
+<script type="text/javascript" src="mobile_build/util/zepto.js"></script> 
+<script src="cdn/codm/zpHm2flUeC/js/popoutbea6.js?v=7"></script>
+<script src="cdn/codm/zpHm2flUeC/js/func8e5e.js?v=15"></script>
+<script src="cdn/codm/zpHm2flUeC/js/language8e5e.js?v=15"></script>
+<script>
+
+	var _BaseUrl="https://west-mrms.codm.activision.com/commonAct/codmwest_cdk_center/";
+	var codeKey = '';
+	var verifyKey= '';
+
+	var globalNum = getQueryString("language") ? getQueryString("language") : 0;
+	footerInfo();
+	lan(globalNum);
+	var domLangList = $("#lang_list");
+	for(var i=0;i<data.length;i++) {
+		domLangList.append('<li onclick="javascript:lan('+i+');">'+data[i].name+'</li>');
+	}
+	function firstGetValCode() {
+		$.ajax({
+			url: _BaseUrl+"valCode.php",
+			type: "GET",
+			dataType: "jsonp",
+			async: false,
+			jsonp: "callback",
+			jsonpCallback: "success_jsonpCallback",
+			data: { sServiceType: "codmatvi", getCodeKey: 1},
+			error: function (XMLHttpRequest, textStatus) {
+				//showError(data[globalNum]['systemError']);
+				alert("ERROR");
+			},
+			success: function (result) {
+				codeKey = result.key;
+				$("#val_code").attr("src", _BaseUrl+"valCode.php?sServiceType=codmatvi&codeKey=" + codeKey);
+			}
+		});
+	}
+
+	firstGetValCode();
+	$('#refvc').on('click', function () {
+		if (!codeKey) {
+			firstGetValCode();
+		} else {
+			$("#val_code").attr("src",  _BaseUrl+"valCode.php?sServiceType=codmatvi&codeKey=" + codeKey + "&_rand=" + Math.random());
+		}
+	});
+	//************************************************************
+
+	function submit(_uid,_cdkey,_verifyKey) {
+		need(["util.zepto", "biz.widget.dialog"], function(aa, widget) {
+			widget.showLoading();
+			$.ajax({
+				url: _BaseUrl+"ExchangeCdkey.php",
+				type: "GET",
+				dataType: "jsonp",
+				jsonp:"callback",
+				jsonpCallback:"success_jsonpCallback",
+				async: true,
+				data: { sServiceType: "codmatvi", roleId:_uid, sCdk: _cdkey, verifyKey: _verifyKey, areaid: 1, platid: 0, partition: 1,codeKey:codeKey,lang:'zh-tw' },
+				error: function (XMLHttpRequest, textStatus) {
+					widget.hideLoading();
+					popup($('#pop2'),data[globalNum]['systemError']);
+				},
+				success: function (result) {
+					widget.hideLoading();
+					if (data[globalNum].errorCode.hasOwnProperty(result.iRet)) {
+						if (result.iRet == 0) {
+							popup($('#pop2'),data[globalNum]['errorCode'][result.iRet]);
+						} else {
+							popup($('#pop2'),data[globalNum]['errorCode'][result.iRet]);
+						}
+					} else {
+						popup($('#pop2'),data[globalNum]['submitFalse']);
+					}
+				}
+			});
+		});
+	}
+	function confirmInfo(widget) {
+		var sCdk = $('#F_CDKEY').val();
+		$.ajax({
+			url: _BaseUrl+"confirmInfo.php",
+			type: "GET",
+			dataType: "jsonp",
+			jsonp:"callback",
+			jsonpCallback:"success_jsonpCallback",
+			async: true,
+			xhrFields: {
+				withCredentials: true
+			},
+			data: {
+				sServiceType: "codmatvi",
+				roleId: $("#F_UID").val(),
+				sCdk: sCdk,
+				verifyCode: $("#F_VCODE").val(),
+				codeKey: codeKey,
+				areaid: 1,
+				partition: 1,
+				platid: 0 ,
+				lang:'zh-tw'
+			},
+			error: function (XMLHttpRequest, textStatus) {
+				widget.hideLoading();
+				popup($('#pop2'),data[globalNum]['systemError']);
+				$("#val_code").attr("src", _BaseUrl+"valCode.php?sServiceType=codmatvi&codeKey=" + codeKey + "&_rand=" + Math.random());
+			},
+			success: function (result) {
+				widget.hideLoading();
+				if (result.iRet === 0) {
+					//	$(".ch_list span").eq(0).text(data[globalNum].reinfo + ": " + result.jData.cdkName);
+					$("#V_NICK").text(result.jData.roleName);
+					$("#V_UID").text(result.jData.roleId);
+					popup($('#pop4'),"",function(){ submit(result.jData.roleId,sCdk,result.jData.verifyKey) });
+					//刷新一次验证码
+					$("#val_code").attr("src", _BaseUrl+"valCode.php?sServiceType=codmatvi&codeKey=" + codeKey + "&_rand=" + Math.random());
+				} else if (result.iRet === -10005 || result.iRet === -10004 ) {
+					popup($('#pop2'),data[globalNum]['errorCode'][result.iRet]);
+					//刷新一次验证码
+					$("#val_code").attr("src", _BaseUrl+"valCode.php?sServiceType=codmatvi&codeKey=" + codeKey + "&_rand=" + Math.random());
+				} else {
+					$("#val_code").attr("src", _BaseUrl+"valCode.php?sServiceType=codmatvi&codeKey=" + codeKey + "&_rand=" + Math.random());
+					if (data[globalNum].errorCode.hasOwnProperty(result.iRet)) {
+						popup($('#pop2'),data[globalNum]['errorCode'][result.iRet]);
+					} else {
+						popup($('#pop2'),data[globalNum]['systemError']);
+					}
+				}
+			}
+		});
+	}
+		
+	$("#label_submit").click(function(){
+		if($("#label_submit").hasClass("btn_confirm_gray")) {
+			return;
+		}
+		var v1 = $("#F_UID").val().replace(' ', '');
+		var v2 = $("#F_CDKEY").val().replace(' ', '');
+		var v3 = $("#F_VCODE").val().replace(' ', '');
+		if (v1 == '' || v2 == '' || v3 == '') {
+			popup($('#pop2'),data[globalNum].pleasesinput);
+			return false;
+		}
+		need(["util.zepto", "biz.widget.dialog"], function($, widget) {
+			widget.showLoading();
+			confirmInfo(widget);					
+		});
+	});
+	var F1=$("#F_UID");
+	var F2=$("#F_CDKEY");
+	var F3=$("#F_VCODE");
+	checkState();
+	function checkState() {
+		var v1 = F1.val().replace(' ', '');
+		var v2 = F2.val().replace(' ', '');
+		var v3 = F3.val().replace(' ', '');
+		if (v1 != '' && v2 != '' && v3 != '') {
+			$("#label_submit").removeClass("btn_confirm_gray");
+		} else {
+			$("#label_submit").addClass("btn_confirm_gray");
+		}	
+	}
+
+	//************************************************************			
+	//lang 
+	$(".lang_box").click(function(){
+		if($(".lang_list").css("display")=="none"){
+			$(".lang_list").css("display","block");
+		}else{
+			$(".lang_list").css("display","none");
+		}
+	});
+	$(".lang_list li").click(function(){
+		$(".lang_list").css("display","none");
+		$(".lang_on em").text($(this).text())
+	});
+
+</script>
+</body>
+
+<!-- Mirrored from www.callofduty.com/redemption by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 Jan 2023 06:58:19 GMT -->
+</html>
